@@ -1,0 +1,3 @@
+Cloudflare Workers deployment is configured at the project root in wrangler.toml and cloudflare/src/. Run npx wrangler login, then npx wrangler deploy from the project root. Paste the deployed workers.dev HTTPS URL into the Android app; it converts to WSS and includes the selected room for Durable Object routing. Render remains an optional backend via render.yaml and server/.
+
+APK builds are debug-signed. Build using Android Studio or ./gradlew assembleDebug with the Android SDK installed.
